@@ -1,0 +1,1968 @@
+{
+  "basePath": "/",
+  "paths": {
+    "/singleTheDay24": {
+      "post": {
+        "summary": "24小时内非跨天单车GPS数据",
+        "deprecated": false,
+        "produces": [
+          "*/*"
+        ],
+        "operationId": "singleTheDay24POST",
+        "responses": {
+          "200": {
+            "schema": {
+              "type": "object"
+            },
+            "description": "OK"
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "start_time",
+            "description": "起始时间",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "end_time",
+            "description": "截止时间",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "vehicle_no",
+            "description": "车牌号",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "tableName",
+            "description": "表名",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "apiKey",
+            "description": "API Key",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "accessToken",
+            "description": "Access Token",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "tags": [
+          "GPS业务数据接口"
+        ],
+        "consumes": [
+          "application/json"
+        ]
+      }
+    },
+    "/singleMoreDay24": {
+      "post": {
+        "summary": "24小时内跨天单车GPS数据",
+        "deprecated": false,
+        "produces": [
+          "*/*"
+        ],
+        "operationId": "singleMoreDay24",
+        "responses": {
+          "200": {
+            "schema": {
+              "type": "object"
+            },
+            "description": "OK"
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "start_time",
+            "description": "起始时间",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "end_time",
+            "description": "截止时间",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "vehicle_no",
+            "description": "车牌号",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "tableName1",
+            "description": "表名",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "tableName2",
+            "description": "表名",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "apiKey",
+            "description": "API Key",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "accessToken",
+            "description": "Access Token",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "tags": [
+          "GPS业务数据接口"
+        ],
+        "consumes": [
+          "application/json"
+        ]
+      }
+    },
+    "/roadTruck10000": {
+      "post": {
+        "summary": "道路运输车辆信息 默认10000条",
+        "deprecated": false,
+        "produces": [
+          "*/*"
+        ],
+        "operationId": "roadTruck10000",
+        "responses": {
+          "200": {
+            "schema": {
+              "type": "object"
+            },
+            "description": "OK"
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "apiKey",
+            "description": "API Key",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "accessToken",
+            "description": "Access Token",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "tags": [
+          "GPS业务数据接口"
+        ],
+        "consumes": [
+          "application/json"
+        ]
+      }
+    },
+    "/moreMoreDay24": {
+      "post": {
+        "summary": "24小时内跨天多车GPS数据",
+        "deprecated": false,
+        "produces": [
+          "*/*"
+        ],
+        "operationId": "moreMoreDay24",
+        "responses": {
+          "200": {
+            "schema": {
+              "type": "object"
+            },
+            "description": "OK"
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "start_time",
+            "description": "起始时间",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "end_time",
+            "description": "截止时间",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "vehicle_nos",
+            "description": "多个车牌号，以英文逗号隔开",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "tableName1",
+            "description": "表名",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "tableName2",
+            "description": "表名",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "apiKey",
+            "description": "API Key",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "accessToken",
+            "description": "Access Token",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "tags": [
+          "GPS业务数据接口"
+        ],
+        "consumes": [
+          "application/json"
+        ]
+      }
+    },
+    "/moreTheDay24": {
+      "post": {
+        "summary": "24小时内非跨天多车GPS数据",
+        "deprecated": false,
+        "produces": [
+          "*/*"
+        ],
+        "operationId": "moreTheDay24",
+        "responses": {
+          "200": {
+            "schema": {
+              "type": "object"
+            },
+            "description": "OK"
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "start_time",
+            "description": "起始时间",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "end_time",
+            "description": "截止时间",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "vehicle_nos",
+            "description": "多个车牌号，以英文逗号隔开",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "tableName",
+            "description": "表名",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "apiKey",
+            "description": "API Key",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "accessToken",
+            "description": "Access Token",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "tags": [
+          "GPS业务数据接口"
+        ],
+        "consumes": [
+          "application/json"
+        ]
+      }
+    },
+    "/passengerDanger1000": {
+      "post": {
+        "summary": "两客一危GPS实时最新1000条数据",
+        "deprecated": false,
+        "produces": [
+          "*/*"
+        ],
+        "operationId": "passengerDanger1000",
+        "responses": {
+          "200": {
+            "schema": {
+              "type": "object"
+            },
+            "description": "OK"
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "apiKey",
+            "description": "API Key",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "accessToken",
+            "description": "Access Token",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "tags": [
+          "GPS业务数据接口"
+        ],
+        "consumes": [
+          "application/json"
+        ]
+      }
+    },
+    "/moreNewLocation": {
+      "post": {
+        "summary": "返回多车牌号最新位置数据",
+        "deprecated": false,
+        "produces": [
+          "*/*"
+        ],
+        "operationId": "moreNewLocation",
+        "responses": {
+          "200": {
+            "schema": {
+              "type": "object"
+            },
+            "description": "OK"
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "vehicle_nos",
+            "description": "多个车牌号，以英文逗号隔开",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "apiKey",
+            "description": "API Key",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "accessToken",
+            "description": "Access Token",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "tags": [
+          "GPS业务数据接口"
+        ],
+        "consumes": [
+          "application/json"
+        ]
+      }
+    },
+    "/twelveTonOneMinCount": {
+      "post": {
+        "summary": "12吨普货-20S前1分半数据统计",
+        "deprecated": false,
+        "produces": [
+          "*/*"
+        ],
+        "operationId": "twelveTonOneMinCount",
+        "responses": {
+          "200": {
+            "schema": {
+              "type": "object"
+            },
+            "description": "OK"
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "apiKey",
+            "description": "API Key",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "accessToken",
+            "description": "Access Token",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "tags": [
+          "GPS业务数据接口"
+        ],
+        "consumes": [
+          "application/json"
+        ]
+      }
+    },
+    "/twelveTonOneMin": {
+      "post": {
+        "summary": "12吨普货-20S前1分半数据",
+        "deprecated": false,
+        "produces": [
+          "*/*"
+        ],
+        "operationId": "twelveTonOneMin",
+        "responses": {
+          "200": {
+            "schema": {
+              "type": "object"
+            },
+            "description": "OK"
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "apiKey",
+            "description": "API Key",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "accessToken",
+            "description": "Access Token",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "tags": [
+          "GPS业务数据接口"
+        ],
+        "consumes": [
+          "application/json"
+        ]
+      }
+    },
+    "/anqiaoDeviceSignal5": {
+      "post": {
+        "summary": "岸桥设备信号-每5S返回数据",
+        "deprecated": false,
+        "produces": [
+          "*/*"
+        ],
+        "operationId": "anqiaoDeviceSignal5",
+        "responses": {
+          "200": {
+            "schema": {
+              "type": "object"
+            },
+            "description": "OK"
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "timeStamp1",
+            "description": "起始时间",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "timeStamp2",
+            "description": "截止时间",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "apiKey",
+            "description": "API Key",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "accessToken",
+            "description": "Access Token",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "tags": [
+          "设备业务数据接口"
+        ],
+        "consumes": [
+          "application/json"
+        ]
+      }
+    },
+    "/anqiaoDeviceRealTimeMaxWs10": {
+      "post": {
+        "summary": "岸桥-设备实时-近10分钟最大风速",
+        "deprecated": false,
+        "produces": [
+          "*/*"
+        ],
+        "operationId": "anqiaoDeviceRealTimeMaxWs10",
+        "responses": {
+          "200": {
+            "schema": {
+              "type": "object"
+            },
+            "description": "OK"
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "apiKey",
+            "description": "API Key",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "accessToken",
+            "description": "Access Token",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "tags": [
+          "设备业务数据接口"
+        ],
+        "consumes": [
+          "application/json"
+        ]
+      }
+    },
+    "/anqiaoDeviceRealTime5": {
+      "post": {
+        "summary": "岸桥设备实时-每5S返回数据",
+        "deprecated": false,
+        "produces": [
+          "*/*"
+        ],
+        "operationId": "anqiaoDeviceRealTime5",
+        "responses": {
+          "200": {
+            "schema": {
+              "type": "object"
+            },
+            "description": "OK"
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "timeStamp1",
+            "description": "起始时间",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "timeStamp2",
+            "description": "截止时间",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "apiKey",
+            "description": "API Key",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "accessToken",
+            "description": "Access Token",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "tags": [
+          "设备业务数据接口"
+        ],
+        "consumes": [
+          "application/json"
+        ]
+      }
+    },
+    "/anqiaoDeviceRealTimeMaxWs2": {
+      "post": {
+        "summary": "岸桥-设备实时-近2分钟最大风速",
+        "deprecated": false,
+        "produces": [
+          "*/*"
+        ],
+        "operationId": "anqiaoDeviceRealTimeMaxWs2",
+        "responses": {
+          "200": {
+            "schema": {
+              "type": "object"
+            },
+            "description": "OK"
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "apiKey",
+            "description": "API Key",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "accessToken",
+            "description": "Access Token",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "tags": [
+          "设备业务数据接口"
+        ],
+        "consumes": [
+          "application/json"
+        ]
+      }
+    },
+    "/anqiaoDeviceRealTimeMaxWsDay": {
+      "post": {
+        "summary": "岸桥-设备实时-当天最大风速",
+        "deprecated": false,
+        "produces": [
+          "*/*"
+        ],
+        "operationId": "anqiaoDeviceRealTimeMaxWsDay",
+        "responses": {
+          "200": {
+            "schema": {
+              "type": "object"
+            },
+            "description": "OK"
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "apiKey",
+            "description": "API Key",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "accessToken",
+            "description": "Access Token",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "tags": [
+          "设备业务数据接口"
+        ],
+        "consumes": [
+          "application/json"
+        ]
+      }
+    },
+    "/anqiaoDeviceRealTimeWsReal": {
+      "post": {
+        "summary": "岸桥-设备实时-设备实时最大风速",
+        "deprecated": false,
+        "produces": [
+          "*/*"
+        ],
+        "operationId": "anqiaoDeviceRealTimeWsReal",
+        "responses": {
+          "200": {
+            "schema": {
+              "type": "object"
+            },
+            "description": "OK"
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "apiKey",
+            "description": "API Key",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "accessToken",
+            "description": "Access Token",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "tags": [
+          "设备业务数据接口"
+        ],
+        "consumes": [
+          "application/json"
+        ]
+      }
+    },
+    "/anqiaoDeviceMotionOneHour": {
+      "post": {
+        "summary": "岸桥设备运行-每1小时返回数据",
+        "deprecated": false,
+        "produces": [
+          "*/*"
+        ],
+        "operationId": "anqiaoDeviceMotionOneHour",
+        "responses": {
+          "200": {
+            "schema": {
+              "type": "object"
+            },
+            "description": "OK"
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "timeStamp1",
+            "description": "起始时间",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "timeStamp2",
+            "description": "截止时间",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "apiKey",
+            "description": "API Key",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "accessToken",
+            "description": "Access Token",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "tags": [
+          "设备业务数据接口"
+        ],
+        "consumes": [
+          "application/json"
+        ]
+      }
+    },
+    "/anqiaoCurrentDeviceNumAndStatus": {
+      "post": {
+        "summary": "当前生产设备数量及状态(岸桥)",
+        "deprecated": false,
+        "produces": [
+          "*/*"
+        ],
+        "operationId": "anqiaoCurrentDeviceNumAndStatus",
+        "responses": {
+          "200": {
+            "schema": {
+              "type": "object"
+            },
+            "description": "OK"
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "apiKey",
+            "description": "API Key",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "accessToken",
+            "description": "Access Token",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "tags": [
+          "设备业务数据接口"
+        ],
+        "consumes": [
+          "application/json"
+        ]
+      }
+    },
+    "/zhongqiCurrentDeviceNumAndStatus": {
+      "post": {
+        "summary": "当前生产设备数量及状态(无人集卡)",
+        "deprecated": false,
+        "produces": [
+          "*/*"
+        ],
+        "operationId": "zhongqiCurrentDeviceNumAndStatus",
+        "responses": {
+          "200": {
+            "schema": {
+              "type": "object"
+            },
+            "description": "OK"
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "apiKey",
+            "description": "API Key",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "accessToken",
+            "description": "Access Token",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "tags": [
+          "设备业务数据接口"
+        ],
+        "consumes": [
+          "application/json"
+        ]
+      }
+    },
+    "/zhongqiDeviceProducePlan": {
+      "post": {
+        "summary": "设备生产任务计划(无人集卡)",
+        "deprecated": false,
+        "produces": [
+          "*/*"
+        ],
+        "operationId": "zhongqiDeviceProducePlan",
+        "responses": {
+          "200": {
+            "schema": {
+              "type": "object"
+            },
+            "description": "OK"
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "apiKey",
+            "description": "API Key",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "accessToken",
+            "description": "Access Token",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "tags": [
+          "设备业务数据接口"
+        ],
+        "consumes": [
+          "application/json"
+        ]
+      }
+    },
+    "/getCountryWarnData": {
+      "post": {
+        "summary": "全国预警-全部数据",
+        "deprecated": false,
+        "produces": [
+          "*/*"
+        ],
+        "operationId": "getCountryWarnData",
+        "responses": {
+          "200": {
+            "schema": {
+              "type": "object"
+            },
+            "description": "OK"
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "apiKey",
+            "description": "API Key",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "accessToken",
+            "description": "Access Token",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "tags": [
+          "大气业务数据接口"
+        ],
+        "consumes": [
+          "application/json"
+        ]
+      }
+    },
+    "/companyForecast": {
+      "post": {
+        "summary": "天津港公司24小时预报",
+        "deprecated": false,
+        "produces": [
+          "*/*"
+        ],
+        "operationId": "companyForecast",
+        "responses": {
+          "200": {
+            "schema": {
+              "type": "object"
+            },
+            "description": "OK"
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "companyId",
+            "description": "公司ID",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "apiKey",
+            "description": "API Key",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "accessToken",
+            "description": "Access Token",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "tags": [
+          "大气业务数据接口"
+        ],
+        "consumes": [
+          "application/json"
+        ]
+      }
+    },
+    "/eightDayForecast": {
+      "post": {
+        "summary": "8天预报",
+        "deprecated": false,
+        "produces": [
+          "*/*"
+        ],
+        "operationId": "eightDayForecast",
+        "responses": {
+          "200": {
+            "schema": {
+              "type": "object"
+            },
+            "description": "OK"
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "lat",
+            "description": "公司纬度",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "lng",
+            "description": "公司经度",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "apiKey",
+            "description": "API Key",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "accessToken",
+            "description": "Access Token",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "tags": [
+          "大气业务数据接口"
+        ],
+        "consumes": [
+          "application/json"
+        ]
+      }
+    },
+    "/astronomyTide": {
+      "post": {
+        "summary": "天文潮位信息",
+        "deprecated": false,
+        "produces": [
+          "*/*"
+        ],
+        "operationId": "astronomyTide",
+        "responses": {
+          "200": {
+            "schema": {
+              "type": "object"
+            },
+            "description": "OK"
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "startDate",
+            "description": "开始时间，格式：yyyy-MM-dd HH:mm:ss",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "endDate",
+            "description": "截止时间，格式：yyyy-MM-dd HH:mm:ss",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "apiKey",
+            "description": "API Key",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "accessToken",
+            "description": "Access Token",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "tags": [
+          "大气业务数据接口"
+        ],
+        "consumes": [
+          "application/json"
+        ]
+      }
+    },
+    "/getRealTimeWarn": {
+      "post": {
+        "summary": "滨海新区预警数据",
+        "deprecated": false,
+        "produces": [
+          "*/*"
+        ],
+        "operationId": "getRealTimeWarn",
+        "responses": {
+          "200": {
+            "schema": {
+              "type": "object"
+            },
+            "description": "OK"
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "apiKey",
+            "description": "API Key",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "accessToken",
+            "description": "Access Token",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "tags": [
+          "大气业务数据接口"
+        ],
+        "consumes": [
+          "application/json"
+        ]
+      }
+    },
+    "/awsData": {
+      "post": {
+        "summary": "站点气象信息",
+        "deprecated": false,
+        "produces": [
+          "*/*"
+        ],
+        "operationId": "awsData",
+        "responses": {
+          "200": {
+            "schema": {
+              "type": "object"
+            },
+            "description": "OK"
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "stationNum",
+            "description": "站点编号",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "apiKey",
+            "description": "API Key",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "accessToken",
+            "description": "Access Token",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "tags": [
+          "大气业务数据接口"
+        ],
+        "consumes": [
+          "application/json"
+        ]
+      }
+    },
+    "/getCodeCountryWarnData": {
+      "post": {
+        "summary": "全国预警-指定预警编码",
+        "deprecated": false,
+        "produces": [
+          "*/*"
+        ],
+        "operationId": "getCodeCountryWarnData",
+        "responses": {
+          "200": {
+            "schema": {
+              "type": "object"
+            },
+            "description": "OK"
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "code",
+            "description": "预警编号",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "apiKey",
+            "description": "API Key",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "accessToken",
+            "description": "Access Token",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "tags": [
+          "大气业务数据接口"
+        ],
+        "consumes": [
+          "application/json"
+        ]
+      }
+    },
+    "/getTravelPersonCount": {
+      "post": {
+        "summary": "市交委-旅客船员统计量",
+        "deprecated": false,
+        "produces": [
+          "*/*"
+        ],
+        "operationId": "getTravelPersonCount",
+        "responses": {
+          "200": {
+            "schema": {
+              "type": "object"
+            },
+            "description": "OK"
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "apiKey",
+            "description": "API Key",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "accessToken",
+            "description": "Access Token",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "tags": [
+          "市交委数据接口"
+        ],
+        "consumes": [
+          "application/json"
+        ]
+      }
+    },
+    "/getOceanLinerCount": {
+      "post": {
+        "summary": "市交委-邮轮客轮明细",
+        "deprecated": false,
+        "produces": [
+          "*/*"
+        ],
+        "operationId": "getOceanLinerCount",
+        "responses": {
+          "200": {
+            "schema": {
+              "type": "object"
+            },
+            "description": "OK"
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "apiKey",
+            "description": "API Key",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "accessToken",
+            "description": "Access Token",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "tags": [
+          "市交委数据接口"
+        ],
+        "consumes": [
+          "application/json"
+        ]
+      }
+    },
+    "/getTJPWorkTest": {
+      "post": {
+        "summary": "市交委-来港作业船舶测试",
+        "deprecated": false,
+        "produces": [
+          "*/*"
+        ],
+        "operationId": "getTJPWorkTest",
+        "responses": {
+          "200": {
+            "schema": {
+              "type": "object"
+            },
+            "description": "OK"
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "apiKey",
+            "description": "API Key",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "accessToken",
+            "description": "Access Token",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "tags": [
+          "市交委数据接口"
+        ],
+        "consumes": [
+          "application/json"
+        ]
+      }
+    },
+    "/getContainerBoastTake": {
+      "post": {
+        "summary": "集装箱船舶配载（含参）-外理",
+        "deprecated": false,
+        "produces": [
+          "*/*"
+        ],
+        "operationId": "getContainerBoastTake",
+        "responses": {
+          "200": {
+            "schema": {
+              "type": "object"
+            },
+            "description": "OK"
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "evoyage",
+            "description": "evoyage",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "ename",
+            "description": "ename",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "ivoyage",
+            "description": "ivoyage",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "cname1",
+            "description": "cname1",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "imo",
+            "description": "imo",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "apiKey",
+            "description": "API Key",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "accessToken",
+            "description": "Access Token",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "tags": [
+          "外理公司数据接口"
+        ],
+        "consumes": [
+          "application/json"
+        ]
+      }
+    },
+    "/getEceventContainerOneHour": {
+      "post": {
+        "summary": "ecevent（集装箱北区最近一小时）含参数",
+        "deprecated": false,
+        "produces": [
+          "*/*"
+        ],
+        "operationId": "getEceventContainerOneHour",
+        "responses": {
+          "200": {
+            "schema": {
+              "type": "object"
+            },
+            "description": "OK"
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "time",
+            "description": "time",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "apiKey",
+            "description": "API Key",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "accessToken",
+            "description": "Access Token",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "tags": [
+          "设备沙盘数据接口"
+        ],
+        "consumes": [
+          "application/json"
+        ]
+      }
+    },
+    "/getBoxData": {
+      "post": {
+        "summary": "在场箱数据（集装箱北区）",
+        "deprecated": false,
+        "produces": [
+          "*/*"
+        ],
+        "operationId": "getBoxData",
+        "responses": {
+          "200": {
+            "schema": {
+              "type": "object"
+            },
+            "description": "OK"
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "apiKey",
+            "description": "API Key",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "accessToken",
+            "description": "Access Token",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "tags": [
+          "设备沙盘数据接口"
+        ],
+        "consumes": [
+          "application/json"
+        ]
+      }
+    }
+  },
+  "host": "10.130.50.4:18080/SpringMVC_Swagger/controller",
+  "swagger": "2.0",
+  "info": {
+    "description": "提供TJG（天津港）相关数据接口测试",
+    "title": "TJG数据接口",
+    "version": "v1.0"
+  },
+  "tags": [
+    {
+      "name": "GPS业务数据接口",
+      "description": "GPS Controller"
+    },
+    {
+      "name": "设备业务数据接口",
+      "description": "设备 Controller"
+    },
+    {
+      "name": "大气业务数据接口",
+      "description": "大气 Controller"
+    },
+    {
+      "name": "市交委数据接口",
+      "description": "市交委 Controller"
+    },
+    {
+      "name": "外理公司数据接口",
+      "description": "外理公司 Controller"
+    },
+    {
+      "name": "设备沙盘数据接口",
+      "description": "设备沙盘 Controller"
+    }
+  ]
+}

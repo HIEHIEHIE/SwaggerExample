@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d7ec25ba-758f-4237-956f-12afedd8ff3d" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\maven\apache-maven-3.6.3\repository" />
+        <option name="userSettingsFile" value="D:\maven\apache-maven-3.6.3\conf\settings2.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1ljFwXNZlN2Re3va2wqnrhumGVx" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\工作文件\天津港代码\UDTF\SpringMVC_Swagger\src\main\webapp\swagger" />
+      <recent name="D:\工作文件\天津港代码\UDTF\SpringMVC_Swagger\src\main\webapp\js" />
+      <recent name="D:\工作文件\天津港代码\UDTF\SpringMVC_Swagger\src\main\webapp\css" />
+      <recent name="D:\工作文件\天津港代码\UDTF\SpringMVC_Swagger\src\main\webapp\images" />
+      <recent name="D:\工作文件\天津港代码\UDTF\SpringMVC_Swagger\src\main\webapp" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="io.transwarp.util" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\工作文件\天津港代码\UDTF\SpringMVC_Swagger\src\main\webapp\images" />
+      <recent name="D:\工作文件\天津港代码\UDTF\SpringMVC_Swagger\src\main\webapp\WEB-INF\swagger" />
+      <recent name="D:\工作文件\天津港代码\UDTF\SpringMVC_Swagger\src\main\webapp\WEB-INF" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Smart Tomcat.myTomcat">
+    <configuration name="controller" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.transwarp.controller.controller" />
+      <module name="SpringMVC_Swagger" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.transwarp.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.transwarp.controller.test" />
+      <module name="SpringMVC_Swagger" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.transwarp.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in SpringMVC_Swagger" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringMVC_Swagger" />
+      <useClassPathOnly />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="com.poratu.idea.plugins.tomcat" factoryName="SMART_TOMCAT_FACTORY" singleton="false">
+      <option name="adminPort" value="8005" />
+      <option name="contextPath" value="/SpringMVC_Swagger" />
+      <option name="docBase" value="$PROJECT_DIR$/src/main/webapp" />
+      <option name="envOptions" />
+      <option name="passParentEnvironmentVariables" value="true" />
+      <option name="port" value="8080" />
+      <option name="tomcatInfo">
+        <TomcatInfo>
+          <option name="name" value="Apache Tomcat/8.5.61" />
+          <option name="number" value="0" />
+          <option name="path" value="D:\apache-tomcat-8.5.61\apache-tomcat-8.5.61" />
+          <option name="version" value="8.5.61.0" />
+        </TomcatInfo>
+      </option>
+      <option name="vmOptions" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="RunConfigurationTask" enabled="true" run_configuration_name="All in SpringMVC_Swagger" run_configuration_type="JUnit" />
+      </method>
+    </configuration>
+    <configuration name="myTomcat" type="com.poratu.idea.plugins.tomcat" factoryName="SMART_TOMCAT_FACTORY" singleton="false">
+      <option name="adminPort" value="8005" />
+      <option name="contextPath" value="/SpringMVC_Swagger" />
+      <option name="docBase" value="$PROJECT_DIR$/src/main/webapp" />
+      <option name="envOptions" />
+      <option name="passParentEnvironmentVariables" value="true" />
+      <option name="port" value="8080" />
+      <option name="tomcatInfo">
+        <TomcatInfo>
+          <option name="name" value="Apache Tomcat/8.5.61" />
+          <option name="number" value="0" />
+          <option name="path" value="D:\apache-tomcat-8.5.61\apache-tomcat-8.5.61" />
+          <option name="version" value="8.5.61.0" />
+        </TomcatInfo>
+      </option>
+      <option name="vmOptions" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.controller" />
+      <item itemvalue="Application.test" />
+      <item itemvalue="JUnit.All in SpringMVC_Swagger" />
+      <item itemvalue="Smart Tomcat.myTomcat" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.controller" />
+        <item itemvalue="Application.test" />
+        <item itemvalue="JUnit.All in SpringMVC_Swagger" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d7ec25ba-758f-4237-956f-12afedd8ff3d" name="Default Changelist" comment="" />
+      <created>1608102832382</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1608102832382</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1493" height="319" key="GridCell.Tab.0.bottom" timestamp="1675742506817">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="319" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1675742506817" />
+    <state width="1493" height="319" key="GridCell.Tab.0.center" timestamp="1675742506817">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="319" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1675742506817" />
+    <state width="1493" height="319" key="GridCell.Tab.0.left" timestamp="1675742506816">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="319" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1675742506816" />
+    <state width="1493" height="319" key="GridCell.Tab.0.right" timestamp="1675742506817">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="319" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1675742506817" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="value.entrySet().toArray()[0]" />
+        <watch expression="value.entrySet().toArray()[1]" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SpringMVC_Swagger$All_in_SpringMVC_Swagger.ic" NAME="All in SpringMVC_Swagger Coverage Results" MODIFIED="1608104647572" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>

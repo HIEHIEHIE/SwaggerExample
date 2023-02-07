@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+
+    <!--会自动注册RequestMappingHandlerMapping与RequestMappingHandlerAdapter两个Bean,这是Spring MVC为@Controller分发请求所必需的，
+    并且提供了数据绑定支持，@NumberFormatannotation支持，@DateTimeFormat支持,@Valid支持读写XML的支持（JAXB）和读写JSON的支持（默认Jackson）等功能-->
+    <mvc:annotation-driven />
+
+    <!-- spring 可以自动去扫描 com.demo 下面的包或子包下面的Java文件，
+    如果扫描到有Spring的相关注解(@Component @Controller@Service等)的类，则把这些类注册为Spring的bean,
+     可以发现这种扫描的粒度有点太大-->
+    <!--有一个use-default-filters属性，该属性默认为true,这就意味着会扫描指定包下的全部的标有@Component的类，
+    并注册成bean.也就是@Component的子注解@Service,@Reposity等-->
+    <!--如果配置了<context:component-scan>那么<context:annotation-config/>标签就可以不用再xml中配置了，因为前者包含了后者-->
+    <!--另外<context:component-scan>还提供了两个子标签 <context:include-filter> 和 <context:exclude-filter>-->
+    <!--Use-dafault-filters=”false”的情况下：<context:exclude-filter>表示指定的不扫描，<context:include-filter>表示指定的扫描-->
+    <!--    <context:component-scan base-package="com.demo"/>-->
+
+    <!-- 只需要扫描 com.demo 下的 @Controller，@Service, @Componet, 并注册成bean -->
+    <context:component-scan base-package="io.transwarp"/>
+
+    <!-- 视图解析器: 定义JSP文件的位置 -->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <!--前缀-->
+        <property name="prefix" value="/swagger/"/>
+        <!--后缀-->
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+    <!-- 容器默认的DefaultServletHandler处理
+    所有静态内容 和 无RequestMapping处理的URL都将经过这里，
+    然后将该请求交由WEB应用服务器默认的Servlet进行处理。
+    如果不是静态资源的请求和 无RequestMapping处理的URL，才由DispatcherServlet继续进行处理。-->
+    <mvc:default-servlet-handler />
+    <mvc:resources mapping="/swagger/**" location="classpath:/swagger/" />
+    <mvc:resources mapping="/images/**" location="classpath:/images/" />
+    <mvc:resources mapping="/css/**" location="classpath:/css/" />
+    <mvc:resources mapping="/js/**" location="classpath:/js/" />
+    <!-- 将地址重定向："/"是访问的path，"/demoCtrl/index"是重定向后的path：
+    定义无需Controller的url<->view直接映射-->
+    <mvc:view-controller path="/" view-name="redirect:/index"/>
+
+    <!-- 配置上传文件拦截，设置最大上传文件大小，和最大内存大小 -->
+    <bean id="multipartResolver" name="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <!-- set the max upload size100MB  100M=100*1024*1024(B)=104857600 bytes-->
+        <property name="maxUploadSize">
+            <value>104857600</value>
+        </property>
+        <property name="maxInMemorySize">
+            <value>4096</value>
+        </property>
+    </bean>
+
+</beans>

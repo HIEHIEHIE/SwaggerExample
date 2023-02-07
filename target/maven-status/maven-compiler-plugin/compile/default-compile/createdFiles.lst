@@ -1,0 +1,4 @@
+io\transwarp\util\HttpUtil.class
+io\transwarp\bean\UserInfo.class
+io\transwarp\config\Swagger2Config.class
+io\transwarp\controller\controller.class
